@@ -21,6 +21,8 @@ setup = function() {
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
+  
+  drawPuffer(mouseX, mouseY);
 
 }
 
