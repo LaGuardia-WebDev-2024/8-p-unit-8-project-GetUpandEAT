@@ -1,6 +1,6 @@
 //🟢setup Function - will run once
 setup = function() {
-    size(600, 400);
+    size(1000, 550);
     background(255,255,255,0);
     
     drawFish(200, 200); 
@@ -11,18 +11,19 @@ setup = function() {
     drawFish(150, 100);
     
     drawPuffer(420, 105);
+    drawPuffer(220, 280);
     
     drawShark(360, 320);
     
-    drawMer(80,200);
+    drawMer(80, 200);
+    drawMer(750, 450);
 };
-
 
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
   
-  drawPuffer(mouseX, mouseY);
+  drawOrange(mouseX, mouseY);
 
 }
 
@@ -52,8 +53,16 @@ var drawShark = function(sharkX, sharkY, sharkColor){
 
 //🟡drawMer Function - will run when called
 var drawMer = function(merX, merY, merColor){
-  textSize(100);
+  textSize(120);
   fill(merColor);
   text("🧜", merX, merY);
+  
+}
+
+//🟡drawOrange Function - will run when called
+var drawOrange = function(orangeX, orangeY, orangeColor){
+  textSize(45);
+  fill(orangeColor);
+  text("🐠", orangeX, orangeY);
   
 }
